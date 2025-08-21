@@ -1,0 +1,25 @@
+<div class="taskPopUp">
+  <form name="form" (ngSubmit)="f.form.valid && addTask()" #f="ngForm" class="formTasks" novalidate>
+    <div class="AddTaskArea">
+      <input type="text" placeholder="Nome da Task" [(ngModel)]="taskNameAdd.name" name="taskNameAdd" required>
+    </div>
+    <br>
+    <button id="taskSubmit" type="submit" value="submit_task" title="adicionar">+</button>
+  </form>
+
+  <ul class="tasksArea">
+    <li *ngFor="let tasksName of tasksList">
+      {{ tasksName }}
+      <button type="button" value='{{ tasksName }}' (click)='removeTask(tasksName)' title="excluir">x</button>
+      <!-- <button type="button" value='{{ tasksName }}' (click)="showPopUp = ! showPopUp" title="editar">Ed</button> -->
+    </li>
+  </ul>
+</div>
+
+<!-- Update tasks -->
+<!-- <div class="alertUpdate" *ngIf="showPopUp">
+  Escreva o novo nome da tarefa
+
+  <input type="text" placeholder="Nome da Task" [(ngModel)]="taskNameAdd.name" name="taskNameAdd" required>
+  <button type="button" value='{{ tasksName }}' (click)='editTask(tasksName)' title="excluir">ok</button>
+</div> -->

@@ -1,0 +1,79 @@
+.taskPopUp {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 22px 20px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgb(223, 216, 216);
+  -moz-box-shadow: 0px 0px 5px 1px rgb(223, 216, 216);
+  box-shadow: 0px 0px 5px 1px rgb(223, 216, 216);
+}
+
+.AddTaskArea input {
+  width: 99%;
+  border: none;
+  border-bottom: 3px solid #a7de92;
+  height: 35px;
+  padding: 0 0.5%;
+  font-size: 16px;
+  outline: none !important;
+  background: transparent !important;
+}
+
+#taskSubmit {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  border-radius: 50%;
+  padding: 17px 22px;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  color: #000;
+  background: #a7de92;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 1px rgb(223, 216, 216);
+  -moz-box-shadow: 0px 0px 5px 1px rgb(223, 216, 216);
+  box-shadow: 0px 0px 5px 1px rgb(223, 216, 216);
+}
+
+ul.tasksArea {
+  height: 367px;
+  overflow-y: auto;
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+.tasksArea li {
+  text-align: left;
+  font-size: 18px;
+  padding: 12px 10px;
+  border-bottom: 1px solid #f3f3f3;
+  font-weight: 500;
+}
+
+.tasksArea button {
+  float: right;
+  border: none;
+  background: transparent;
+  line-height: 8px;
+  height: 25px;
+  width: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.alertUpdate{
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgb(223, 216, 216);
+  -moz-box-shadow: 0px 0px 5px 1px rgb(223, 216, 216);
+  box-shadow: 0px 0px 5px 1px rgb(223, 216, 216);
+}
